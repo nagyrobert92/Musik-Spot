@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Artist from "./Artist";
 
 const API_ADRESS = "https://spotify-api-wrapper.appspot.com";
 export default class App extends Component {
@@ -32,7 +33,6 @@ export default class App extends Component {
     }
   };
   render() {
-    console.log("this.state", this.state);
     return (
       <div>
         <h1>Musik Spot</h1>
@@ -42,6 +42,7 @@ export default class App extends Component {
           onKeyPress={this.handleKeyPress}
         />
         <button onClick={this.searchArtist}>Search</button>
+        <Artist artist={this.state.artist} />
       </div>
     );
   }
