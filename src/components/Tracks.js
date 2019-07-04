@@ -26,9 +26,17 @@ export default class Tracks extends Component {
           const { id, name, album, preview_url } = track;
 
           return (
-            <div key={id} onClick={this.playAudio(preview_url)}>
-              <img src={album.images[0].url} alt="track-pic" />
-              <p>{name}</p>
+            <div
+              key={id}
+              onClick={this.playAudio(preview_url)}
+              className="track"
+            >
+              <img
+                src={album.images[0].url}
+                alt="track-pic"
+                className="track-pic"
+              />
+              <p className="track-txt">{name}</p>
             </div>
           );
         })}
