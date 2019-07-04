@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+const API_ADRESS = "https://spotify-api-wrapper.appspot.com";
 export default class App extends Component {
   state = { artistQuery: "" };
 
@@ -9,6 +10,11 @@ export default class App extends Component {
   };
   searchArtist = () => {
     console.log("this.state", this.state);
+    fetch(`${API_ADRESS}/artist/${this.state.artistQuery}`)
+      .then(response => response.json())
+      .then(json => {
+        console.log("json", json);
+      });
   };
   handleKeyPress = event => {
     if (event.key === "Enter") {
