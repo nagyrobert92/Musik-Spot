@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Artist from "./Artist";
+import Artist from "./components/Artist";
+import Tracks from "./components/Tracks";
 
 const API_ADRESS = "https://spotify-api-wrapper.appspot.com";
 export default class App extends Component {
@@ -43,6 +44,7 @@ export default class App extends Component {
         />
         <button onClick={this.searchArtist}>Search</button>
         <Artist artist={this.state.artist} />
+        <Tracks tracks={this.state.tracks} />
       </div>
     );
   }
