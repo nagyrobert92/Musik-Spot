@@ -1,5 +1,7 @@
 # Musik-Spot
 
+![](spotOn.gif)
+
 Front-end React Spotify like app, using the Spotify API and styling
 
 Technologies used:
