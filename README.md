@@ -1,4 +1,4 @@
-To view deployed version [click here](musik-spot.netlify.com)
+To view deployed version [click here](https://musik-spot.netlify.com)
 
 # Musik-Spot
 
