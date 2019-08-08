@@ -1,4 +1,4 @@
-[Deployed version](https://stupefied-shaw-768fba.netlify.com/)
+To view deployed version [click here](musik-spot.netlify.com)
 
 # Musik-Spot
 
